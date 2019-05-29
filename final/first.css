@@ -1,0 +1,247 @@
+header h1 {
+    height: 80px;
+    margin-left: 40px;
+    margin-top: 60px;
+    color: white;
+    align-items: center;
+}
+
+body {
+    height: 125vh;
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 80px;
+    padding: 30px;
+}
+
+#spectroom{
+  background-image: url("photo/spectur.jpg");
+}
+
+#rules{
+  background-image: url("photo/back2.jpg")
+}
+
+#container{
+  background-color: white; 
+}
+
+#contacts{
+  background-image:url("photo/background.jpg");
+}
+
+#gallery{
+  background-image:url("photo/background.jpg");
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  align-items: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: absolute;
+  left: 42%;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 50%;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.rules h1{
+  color: black;
+  text-align: center;
+  font-size:50px;
+}
+.rules h2{
+  color: black;
+  text-align: center;
+  font-size: 40px;
+}
+
+.rules p{
+  color: black;
+  text-align: inherit;
+  font-size: 20px;
+}
+
+
+
+header {
+  
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 white;
+
+}
+header * {
+    right: 0;
+    display: inline;
+}
+
+header li {
+    margin: 20px; 
+}
+
+header li a {
+    color:white;
+    text-decoration: none;
+}
+
+header nav {
+    z-index: 9;
+    position: absolute;
+    right: 0.5em;
+    top: 0;
+    height: 80px;
+    line-height: 80px;
+}
+
+.pricing{
+  color: white;
+  text-align: center;
+}
+.pricing ul li{
+  margin: 0 1px;
+}
+
+.contacts h1{
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 50px;
+  text-align: center;
+}
+
+.contacts h2{
+  color: yellow;
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 45px;
+}
+
+.contacts p{
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 28px;
+}
+
+.contacts ul li{
+  color: white;
+  list-style-type:none;
+}
+
+#map {
+  height: 100%;
+}
+
+.dropbtn {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 16px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 110px;
+  z-index: 1;
+  color: black;
+  box-shadow: 0 0 25px 0 white;
+}
+
+.dropdown-content a {
+  color: whitesmoke;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  font-family: 'Shadows Into Light', cursive;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  text-align: center;
+  background-color:darkgrey;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+.pricing_it h1{
+  color: red;
+  display: block;
+  font-size: 20px;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.text{
+  color: aliceblue;
+}
+
+
+.start h1{
+  color: black;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 100px;
+}
+
+.start h2{
+  color: black;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 40px;
+}
+
+
+
+
+
+

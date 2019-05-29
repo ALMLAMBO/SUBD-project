@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="main.css" />
+        <title>Spectrooms</title>
+        <style>
+                @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+        </style>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <link rel="icon" href="photo/logo_offic.jpg" />
+    </head>
+
+    <body id="contact_it">
+        <header class="spectroom-header">
+            <h1> SPECTROOMS </h1>
+            <nav>
+                <ul>
+                    <li><a href="spectroom.html">Ескейп стаи</a></li>
+                    <li><a href="rules.html">Правила</a></li>
+                    <li><a href="gallery.html">Галерия</a></li>
+                    <li>
+                            <button class="dropbtn"> Контакти</button>
+                            <div class="dropdown-content">
+                                <a href="contacts.html#room66">Room 66</a>
+                                <a href="contact_room662.html">Room 66 II </a>
+                                <a href="contact_It.html">IT</a>
+                            </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+         
+        <main class = contacts id="contacts">
+                <div id = it>
+                    <h2>King's Room: It - Real Life Escape Room</h2>
+                    <p> <img src = photo/address.png height="45"> София, ул. Иван Рилски 15 </p>
+                    <p> <img src = photo/telephone.png height="45"> Телефон: 0897 779 332</p>
+                    <p> <img src = photo/mail.png height="45"> contact@kingsroom.bg</p>
+                    
+                    <div id="map3" style="width:100%;height:400px;"></div>    
+                        <script>
+                            function myMap() {
+                                        
+                                var myLatLng = {lat: 42.689260, lng:23.311591};
+        
+                                var map3 = new google.maps.Map(document.getElementById("map3"),{
+                                    zoom: 15,
+                                    center: myLatLng
+                                });
+                        
+                                var marker = new google.maps.Marker({
+                                    position: myLatLng,
+                                    map: map3,
+                                    title: 'Kings Room: It'
+                                });
+        
+                                marker.setMap(map3);
+                            }                
+                        </script>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTyMCvAJMcIU__JE4PNwNzUVkGF2mmJJc&callback=myMap"></script>
+                        <br>
+                        <br>
+                        <br>
+                    
+                    
+            </div>
+        
+        </main>
+    
+
+
+        <div id="footer">
+                <p>© Spectrooms 2019 | Created by Andrea Petrenko</p>
+        </div>   
+        
+    </body>
+
+</html> 
