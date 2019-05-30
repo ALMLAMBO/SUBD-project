@@ -38,3 +38,4 @@ if ($stmt->num_rows > 0) {
 	echo 'Incorrect username!';
 }
 $stmt->close();
+?>
