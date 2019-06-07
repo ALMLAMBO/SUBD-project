@@ -27,7 +27,7 @@
     if($statement = $db_conn ->
         prepare('select BeginingDate, EndDate from reservations where RoomId = ? and BeginingDate = :bdate and EndDate = :edate')) {
 
-        $statement -> bind_param("i", $_POST["RoomId"]);
+        $statement -> bind_param("i", $_POST["RoomName"]);
         $statement -> bind_param(":bdate", $_POST["BeginingDate"]);
         $statement -> bind_param(":edate", $_POST["EndDate"]);
         $statement -> execute();
@@ -39,7 +39,7 @@
             if($statement = $db_conn -> prepare('insert into reservations value(?, ?, ?)')) {
                 $bdate = $_POST["BeginingDate"];
                 $edate = $_POST["EndDate"];
-                $roomId = $_POST["RoomId"];
+                $roomId = $_POST["RoomName"];
 
                 $statement -> bind_param("ssi", $bdate, $edate, $roomId);
                 $statement -> execute();
