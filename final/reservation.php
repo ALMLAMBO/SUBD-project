@@ -4,7 +4,7 @@
         die("Failed to connect to MySql: " .mysqli_connect_error());
     }
 
-    if(!isset($_POST["BeginingDate"], $_POST["EndDate"], $_POST["RoomId"])) {
+    if(!isset($_POST["BeginingDate"], $_POST["EndDate"], $_POST["RoomName"])) {
         die('Please select dates and room for reservation');
     }
 
