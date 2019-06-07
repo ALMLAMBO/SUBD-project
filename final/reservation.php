@@ -9,7 +9,7 @@
     }
 
     if(empty($_POST["BeginingDate"])
-        || empty($_POST["EndDate"]) || empty($_POST["RoomId"])) {
+        || empty($_POST["EndDate"]) || empty($_POST["RoomName"])) {
 
         die('Please select dates or room for reservation');
     }
