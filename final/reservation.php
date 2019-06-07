@@ -45,5 +45,18 @@
         echo "Could not prepare statement!";
     }
 
+    if($statement = $db_conn ->
+        prepare('delete from reservations where EndDate  = ?')) {
+
+        $statement -> bind_param('s', date("Y-m-d"));
+        $success = $statement -> execute();
+        if($success == true) {
+            echo 'Successful deletion of expired reservations';
+        }
+        else {
+            echo 'Could not execute';
+        }
+    }
+
     $db_conn -> close();
 ?>
