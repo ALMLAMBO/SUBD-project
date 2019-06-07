@@ -1,5 +1,5 @@
 <?php
-    $db_conn = new mysqli("localhost", "root", "guest", "escape_rooms");
+    $db_conn = new mysqli("localhost", "root", "password", "escape_rooms");
     if(mysqli_connect_errno()) {
         die("Failed to connect to MySql: " .mysqli_connect_error());
     }
@@ -11,7 +11,17 @@
     if(empty($_POST["BeginingDate"])
         || empty($_POST["EndDate"]) || empty($_POST["RoomId"])) {
 
-        die('Please select dates and room for reservation');
+        die('Please select dates or room for reservation');
+    }
+    else {
+        $statement = $db_conn ->
+        prepare('select RoomName from rooms where RoomName = ?');
+        $statement -> bind_param('s', $_POST["RoomName"]);
+        $statement -> execute();
+        $statement -> store_result();
+        if($statement -> num_rows == 0) {
+            echo "Room with the given name did not exists";
+        }
     }
 
     if($statement = $db_conn ->
